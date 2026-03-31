@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<div class="page-container">
+
+  <div class="card layout-duplo">
+
+
+
+    <!-- FORM -->
+    <div class="lado-form">
+
+      <h2>Cadastro</h2>
+
+      <form onsubmit="event.preventDefault(); cadastrar();">
+
+        <input class="input-padrao" id="nome" placeholder="Nome">
+        <input class="input-padrao" id="matricula" placeholder="Matrícula">
+        <input class="input-padrao" type="email" id="email" placeholder="Email">
+        <input class="input-padrao" type="password" id="senha" placeholder="Senha">
+
+        <button class="btn">Cadastrar</button>
+
+      </form>
+
+      <div class="link">
+        <a href="index.html">Voltar</a>
+      </div>
+
+    </div>
+
+<!-- IMAGEM -->
+    <div class="lado-img">
+      <img src="https://th.bing.com/th/id/OIP.hvZgSBdfrlC5zHYaSvGQgwHaEK?w=294&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+    </div>
+
+  </div>
+
+</div>
+
+<script type="module" src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BASE
+========================= */
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* =========================
+   FUNDO GLOBAL
+========================= */
+.page-container {
+  min-height: 100vh;
+  width: 100%;
+
+  background: linear-gradient(135deg, #1e7f3f, #0f3d2e);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+/* =========================
+   CARD PADRÃO (IGUAL LOGIN)
+========================= */
+.card {
+  width: 100%;
+  max-width: 420px;
+
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   TITULO
+========================= */
+.card h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+.input-padrao {
+  width: 100%;
+  height: 55px;
+
+  border-radius: 30px;
+  border: none;
+  background: #e6e6e6;
+
+  padding: 0 20px;
+  margin-bottom: 15px;
+
+  font-size: 14px;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+.btn {
+  width: 100%;
+  height: 55px;
+
+  border-radius: 30px;
+  border: none;
+
+  background: #57b846;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+/* =========================
+   LINKS
+========================= */
+.link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.link a {
+  text-decoration: none;
+  color: #57b846;
+  font-weight: bold;
+}
+
+.link a:hover {
+  color: #333;
+}
+
+/* =========================
+   LISTA (PEDIDOS / RH)
+========================= */
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* =========================
+   CARD PEDIDO
+========================= */
+.card-pedido {
+  width: 100%;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* =========================
+   INFO PEDIDO
+========================= */
+.pedido-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* =========================
+   STATUS
+========================= */
+.status {
+  width: fit-content;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.status.pendente { background: #fff3cd; color: #856404; }
+.status.aprovado { background: #d4edda; color: #155724; }
+.status.negado { background: #f8d7da; color: #721c24; }
+.status.retirada { background: #cce5ff; color: #004085; }
+
+/* =========================
+   AÇÕES RH
+========================= */
+.acoes {
+  display: flex;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.btn-acao {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.btn-aprovar { background: #28a745; }
+.btn-negar { background: #dc3545; }
+.btn-retirada { background: #007bff; }
+.btn-excluir { background: #343a40; }
+
+/* =========================
+   LOGIN / CADASTRO (COM IMAGEM)
+========================= */
+.layout-duplo {
+  display: flex;
+  flex-direction: column;
+}
+
+.lado-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.lado-img img {
+  width: 70%;
+  height: auto;
+}
+
+.lado-form {
+  width: 100%;
+}
+
+/* =========================
+   RESPONSIVO DESKTOP
+========================= */
+@media (min-width: 768px) {
+
+  .card {
+    max-width: 900px;
+  }
+
+  .layout-duplo {
+    flex-direction: row;
+  }
+
+  .lado-img {
+    width: 50%;
+  }
+
+  .lado-form {
+    width: 50%;
+    padding: 30px;
+  }
+
+  /* pedidos em linha */
+  .card-pedido {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .pedido-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+  }
+
+}
