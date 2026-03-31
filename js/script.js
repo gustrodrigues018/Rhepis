@@ -49,7 +49,7 @@ window.login = async () => {
 
   try {
     await signInWithEmailAndPassword(auth, email, senha);
-    window.location.href = "solicitacao.html";
+    window.location.href = "painel.html";
   } catch (e) {
     alert(e.message);
   }
