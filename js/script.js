@@ -253,3 +253,17 @@ window.excluir = async (id) => {
     alert("Erro ao excluir: " + e.message);
   }
 };
+
+// =========================
+// 🔁 REDIRECIONAMENTO CORRETO
+// =========================
+onAuthStateChanged(auth, (user) => {
+
+  const pagina = window.location.pathname;
+
+  // se está logado e está no login
+  if (user && pagina.includes("index.html")) {
+    window.location.href = "painel.html";
+  }
+
+});
