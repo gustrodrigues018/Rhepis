@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel do Colaborador</title>
+
+<style>
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FUNDO */
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #1e7f3f, #0f3d2e);
+}
+
+/* CARD */
+.container {
+  background: #fff;
+  width: 90%;
+  max-width: 400px;
+
+  padding: 40px 30px;
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* TITULO */
+h2 {
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+/* BOTÕES */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  margin-bottom: 20px;
+
+  border-radius: 30px;
+  text-decoration: none;
+
+  background: #57b846;
+  color: white;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+/* HOVER */
+.btn:hover {
+  background: #333;
+}
+
+/* MOBILE MAIS BONITO */
+@media (max-width: 768px) {
+  .btn {
+    padding: 18px;
+    font-size: 18px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <h2>Painel do Colaborador</h2>
+
+  <a href="solicitacao.html" class="btn">
+    Nova Solicitação
+  </a>
+
+  <a href="usuario.html" class="btn">
+    Meus Pedidos
+  </a>
+
+</div>
+
+</body>
+</html>
